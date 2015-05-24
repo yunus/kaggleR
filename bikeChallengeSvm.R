@@ -73,6 +73,8 @@ extractFeatures <- function(data) {
   data$wday <- wday(data$date)
   data$year <- year(data$date)
   data$mday <- mday(data$date)
+  # the test set includes the days of month larger than 20. I wanted to put the estimated dates in the middle of a month instead of the end.
+  # therefore, I created a new month feature.
   data$mth <- ifelse( data$mday > 10, month(ymd_hms(data$datetime)), month(ymd_hms(data$datetime)) -1 )
   data$week <- week(ymd_hms(data$datetime))
   return(data)
