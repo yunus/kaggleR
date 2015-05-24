@@ -1,6 +1,9 @@
-# This script has been inspired by the  Random Forests benchmark code
-# from kaggle, bike challenge.
-# 
+# This script has been inspired by the  Random Forests benchmark code.
+# from kaggle, bike challenge (https://www.kaggle.com/c/bike-sharing-demand).
+#
+# You can find the full dataset from http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset
+# In the full data set, different from the bike challenge, there are additional features and all the features have already been scaled.
+# So you need to change the code for the full data set. 
 
 library(lubridate)
 library(caret)

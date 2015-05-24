@@ -1,2 +1,3 @@
 # kaggleR
-my kaggle projects
+
+Each file includes comments for project description.
